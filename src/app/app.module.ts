@@ -6,15 +6,15 @@ import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  bootstrap: [ 
-    AppComponent
-  ]
+  bootstrap: [
+    AppComponent,
+  ],
 })
 export class AppModule { }

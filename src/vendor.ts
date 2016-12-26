@@ -10,7 +10,7 @@ import '@angular/router';
 import 'rxjs';
 
 // Lodash
-import 'lodash'
+import 'lodash';
 
 // jQuery
 import 'jquery';
