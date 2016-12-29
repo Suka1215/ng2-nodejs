@@ -1,12 +1,13 @@
 import { TestBed } from '@angular/core/testing';
-import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
 
-describe('Header Component', () => {
+describe('Footer Component', () => {
   beforeEach(() => {
-    TestBed.configureTestingModule({ declarations: [HeaderComponent]});
+    TestBed.configureTestingModule({ declarations: [FooterComponent]});
   });
-  it ('should work', () => {
-    let fixture = TestBed.createComponent(HeaderComponent);
-    expect(fixture.componentInstance instanceof HeaderComponent).toBe(true, 'should create AppComponent');
+  it ('should work for footer', () => {
+    let fixture = TestBed.createComponent(FooterComponent);
+    expect(fixture.componentInstance instanceof FooterComponent)
+    .toBe(true, 'should create footer component');
   });
 });

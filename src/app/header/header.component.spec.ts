@@ -5,8 +5,9 @@ describe('Header Component', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({ declarations: [HeaderComponent]});
   });
-  it ('should work', () => {
+  it ('should work for header', () => {
     let fixture = TestBed.createComponent(HeaderComponent);
-    expect(fixture.componentInstance instanceof HeaderComponent).toBe(true, 'should create AppComponent');
+    expect(fixture.componentInstance instanceof HeaderComponent)
+    .toBe(true, 'should create header component');
   });
 });

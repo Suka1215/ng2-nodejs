@@ -4,7 +4,7 @@
     "comment-format": [true, "check-space"],
     "curly": true,
     "eofline": true,
-    "indent": [true, "spaces"],
+    "indent": [true, "tab"],
     "jsdoc-format": true,
     "max-line-length": [true, 100],
     "no-consecutive-blank-lines": [true],

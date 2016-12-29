@@ -46,12 +46,12 @@ module.exports = {
       {
 
         // Only run `.js` files through Babel
-        test: /\.js?$/,
+        test: /\.ts?$/,
 
         
         loader: [
           "babel-loader",
-          "eslint-loader"
+          "eslint-loader",
         ],
 
         // Skip any files outside of your project's `src` directory
@@ -65,7 +65,7 @@ module.exports = {
         // Options to configure babel with
         query: {
           plugins: ['transform-runtime'],
-          presets: ['es2015'],
+          presets: ['es2015', 'es6'],
         }
       },
       {
@@ -93,13 +93,21 @@ module.exports = {
         },
         to: ''
       }
-    ]),
+    ], {
+      ignore: [
+        // Doesn't copy any files with a txt extension    
+        '*.html',
+      ],
+    }
+    
+    ),
     new ExtractTextPlugin("app.[hash].css"),
     new webpack.optimize.CommonsChunkPlugin({
       name: ['app', 'vendor', 'polyfills']
     }),
 
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: './server/views/index.html'
     }),
   ]

@@ -1,23 +1,19 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "typeCheck": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": ["es2015", "es6", "dom"],
-    "mapRoot": "../dist/server",
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "outDir": "./dist/",
-    "compilerOptions": {
-         "types" : [ "node_modules/@types" ]
-    }
+    "suppressImplicitAnyIndexErrors": true
   },
   "exclude": [
-    "node_modules/*"
+    "node_modules/*",
+    "**/*-aot.ts"
   ],
   "angularCompilerOptions": {
     "skipMetadataEmit": true
